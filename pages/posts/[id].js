@@ -2,13 +2,15 @@ import Layout from "../../components/layout";
 import { getAllPostsIds, getPostData } from "../../lib/posts";
 
 export default function Post({ postData }) {
-  return <Layout>
-    {postData.title}
-    <br />
-    {postData.id}
-    <br />
-    {postData.date}
-  </Layout>;
+  return (
+    <Layout>
+      {postData.title}
+      <br />
+      {postData.id}
+      <br />
+      {postData.date}
+    </Layout>
+  );
 }
 
 export async function getStaticPaths() {
